@@ -4,7 +4,7 @@ import axios from "axios";
 
 function App() {
 
-  const key = "5170aed3727f44863719bfcade6cfa74";
+  const key = "";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=dallas&appid=${key}`;
 
   return (
