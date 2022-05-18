@@ -1,10 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
+import axios from "axios";
 
 
 function App() {
+
+  const key = "5170aed3727f44863719bfcade6cfa74";
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=dallas&appid=${key}`;
+
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <div className="container">
+        <div className="top">
+          <div className="location">
+            <p>Dallas</p>
+          </div>
+          <div className="temp">
+            <h1>60ºF</h1>
+          </div>
+          <div className="description">
+            <p>Clouds</p>
+          </div>
+        </div>
+        <div className="bottom">
+          <div className="feels">
+            <p>65ºF</p>
+          </div>
+          <div className="humidity">
+            <p>20%</p>
+          </div>
+          <div className="wind">
+            12 MPH
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
